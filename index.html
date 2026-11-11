@@ -13,13 +13,45 @@ button,select,input{font:inherit}button{cursor:pointer}.titlebar{height:48px;bac
 .ribbon{background:#fff;border-bottom:1px solid var(--line);padding:9px 12px;min-height:100px;display:flex;gap:14px;align-items:stretch;overflow-x:auto}.group{display:flex;align-items:center;gap:5px;border-right:1px solid var(--line);padding:0 12px 0 0;flex-shrink:0}.group:last-child{border:0}.stack{display:flex;flex-direction:column;gap:5px}.rbtn{min-width:34px;height:32px;border:1px solid transparent;background:#fff;border-radius:4px;padding:4px 7px;color:#333}.rbtn:hover{background:var(--blue2);border-color:#c4d8fa}.rbtn.big{height:58px;min-width:54px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:12px}.rbtn .sym{font-size:18px}.rselect{height:30px;border:1px solid #c9cdd2;border-radius:3px;background:white;padding:3px 6px}.fontname{width:155px}.fontsize{width:58px}.colorbtn{display:flex;align-items:center;gap:4px}.colorbtn input{width:20px;height:18px;border:0;padding:0;background:transparent}.workarea{display:flex;min-height:calc(100vh - 205px)}.leftpane{width:210px;background:#fff;border-right:1px solid var(--line);padding:14px;flex-shrink:0}.panehead{font-weight:600;margin:4px 0 12px}.paneitem{display:block;width:100%;border:0;background:white;text-align:left;padding:8px;border-radius:4px;color:#333}.paneitem:hover,.paneitem.active{background:var(--blue2);color:var(--blue)}.panehint{font-size:12px;color:var(--muted);line-height:1.5;margin-top:18px}.stage{flex:1;min-width:0;padding:24px 18px 60px;overflow:auto}.page{width:794px;min-height:1123px;margin:0 auto 22px;background:white;box-shadow:0 2px 10px #00000018;padding:76px 72px;outline:none;line-height:1.5;overflow-wrap:anywhere;font-family:Calibri,Arial,sans-serif;font-size:11pt}.page:focus{box-shadow:0 2px 10px #00000018,0 0 0 1px #8bb5f5}.page table{border-collapse:collapse;width:100%}.page td,.page th{border:1px solid #777;padding:6px;min-width:35px}.page img{max-width:100%;height:auto}.page h1{font-size:24pt}.page h2{font-size:18pt}.page h3{font-size:14pt}.pagebreak{break-before:page;border-top:1px dashed #aaa;margin-top:28px;padding-top:1px}.statusbar{position:fixed;bottom:0;left:0;right:0;height:28px;background:var(--blue);color:white;display:flex;align-items:center;padding:0 14px;font-size:12px;gap:18px;z-index:5}.statusbar .right{margin-left:auto;display:flex;gap:12px;align-items:center}.statusbar input{width:100px}.modalback{position:fixed;inset:0;background:#0006;display:none;align-items:center;justify-content:center;z-index:10}.modal{background:white;border-radius:8px;padding:20px;width:min(420px,92vw);box-shadow:0 8px 40px #0003}.modal h3{margin-top:0}.modal input{width:100%;padding:9px;border:1px solid var(--line);margin:8px 0}.modal button{padding:8px 14px;border:1px solid var(--line);border-radius:4px;background:white}.modal .primary{background:var(--blue);color:white}.mobilemenu{display:none}
 @media(max-width:850px){.leftpane{display:none}.stage{padding:12px 6px 50px}.page{width:100%;min-height:900px;padding:34px 24px}.titlebar{gap:7px;padding:0 8px}.saved{display:none}.ribbon{min-height:88px}.topright button{padding:6px}.mobilemenu{display:inline-block}}
 @media print{body{background:white}.titlebar,.tabs,.ribbon,.leftpane,.statusbar{display:none!important}.workarea,.stage{display:block;padding:0;margin:0;overflow:visible}.page{box-shadow:none;margin:0;width:auto;min-height:0;page-break-after:always;padding:0}.page:last-child{page-break-after:auto}}
+
+/* AK Word visual refresh: familiar desktop word-processor workspace */
+:root{--blue:#185abd;--blue2:#e8f0fe;--ink:#202124;--muted:#5f6368;--line:#d5d9df;--canvas:#e7e9ed}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--canvas)}
+.titlebar{height:54px;background:#185abd;color:#fff;border:0;padding:0 18px;gap:12px}
+.logo{color:#fff;font-size:21px;letter-spacing:-.5px}.logo span{color:#f4d27d}
+.docname{color:#fff;background:#ffffff18;border:1px solid #ffffff35;border-radius:4px}
+.docname:focus{border-color:#fff}.docname::selection{background:#fff;color:#185abd}
+.saved{color:#e5edff}
+.topright button{border:1px solid #ffffff65;background:#ffffff14;color:#fff;border-radius:4px}
+.topright button:hover{background:#ffffff28}.topright .share{background:#fff;color:#185abd;border-color:#fff;font-weight:600}
+.tabs{padding-left:18px;gap:2px;box-shadow:0 1px 2px #0000000b}
+.tab{padding:12px 16px 10px;font-size:14px;color:#3c4043}
+.tab.active{border-color:#185abd;color:#185abd}
+.ribbon{padding:10px 18px 8px;min-height:112px;gap:18px;box-shadow:0 2px 4px #00000008}
+.group{gap:7px;padding-right:17px}
+.rbtn{border-radius:3px;color:#30343b}
+.rbtn:hover{background:#e8f0fe;border-color:#c6d7f5}
+.rbtn.big{min-width:58px;height:64px}
+.rselect{border-color:#c8ccd1;border-radius:3px}
+.workarea{min-height:calc(100vh - 224px)}
+.leftpane{background:#f8f9fa;width:225px}
+.stage{padding:28px 22px 70px}
+.page{width:816px;min-height:1056px;padding:78px 82px;box-shadow:0 1px 5px #00000020,0 8px 22px #0000000d;font-family:Calibri,"Aptos",Arial,sans-serif;font-size:11pt;line-height:1.5}
+.page:focus{box-shadow:0 1px 5px #00000020,0 0 0 1px #8ab4f8}
+.statusbar{background:#185abd;height:30px}
+.ruler{height:25px;width:816px;margin:0 auto 5px;background:linear-gradient(#f7f8fa,#eef0f3);border:1px solid #d5d9df;border-bottom:0;position:relative;color:#6b7077;font-size:10px;display:flex;justify-content:space-between;padding:2px 40px 0;box-shadow:0 1px 2px #00000008}
+.ruler:before{content:"";position:absolute;left:40px;right:40px;top:0;height:9px;background:repeating-linear-gradient(90deg,#9aa0a6 0 1px,transparent 1px 24px)}
+.ruler span{position:relative;padding-top:9px}
+@media(max-width:850px){.titlebar{height:auto;min-height:52px;flex-wrap:wrap;padding:8px}.topright{gap:4px}.topright button{font-size:12px}.ruler{display:none}.page{width:100%;min-height:900px;padding:34px 24px}}
+@media print{.ruler{display:none!important}}
+
 </style></head>
 <body>
-<header class="titlebar"><div class="logo">AK <span>Word</span></div><input id="docname" class="docname" value="Document1" aria-label="Document name"><span id="saved" class="saved">All changes saved</span><div class="topright"><button onclick="newDocument()">New</button><button onclick="saveLocal()">Save</button><button class="share" onclick="exportPDF()">Export PDF</button></div></header>
+<header class="titlebar"><div class="logo">AK <span>Word</span></div><input id="docname" class="docname" value="Document1" aria-label="Document name"><span id="saved" class="saved">All changes saved</span><div class="topright"><button onclick="newDocument()">New</button><button onclick="saveLocal()">Save</button><button onclick="exportWord()">Word</button><button class="share" onclick="exportPDF()">PDF</button></div></header>
 <nav class="tabs" id="tabs"><button class="tab active" data-tab="Home">Home</button><button class="tab" data-tab="Insert">Insert</button><button class="tab" data-tab="Layout">Layout</button><button class="tab" data-tab="References">References</button><button class="tab" data-tab="Review">Review</button><button class="tab" data-tab="View">View</button></nav>
 <section class="ribbon" id="ribbon"></section>
 <div class="workarea"><aside class="leftpane"><div class="panehead">Navigation</div><button class="paneitem active" onclick="showPane('pages',this)">▤ Pages</button><button class="paneitem" onclick="showPane('headings',this)">☷ Headings</button><button class="paneitem" onclick="showPane('find',this)">⌕ Find</button><div id="panecontent"><p class="panehint">Your document pages appear here. Use the Insert tab to add a page break, table, picture or equation.</p></div></aside>
-<main class="stage" id="stage"><article class="page" contenteditable="true" spellcheck="true"><h1>Welcome to AK Word</h1><p>Start writing your document here.</p><p>You can use the ribbon above to format text, insert tables and pictures, and adjust your page layout.</p></article></main></div>
+<main class="stage" id="stage"><div class="ruler" aria-hidden="true"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><article class="page" contenteditable="true" spellcheck="true"><h1>Welcome to AK Word</h1><p>Start writing your document here.</p><p>You can use the ribbon above to format text, insert tables and pictures, and adjust your page layout.</p></article></main></div>
 <footer class="statusbar"><span id="pagecount">Page 1 of 1</span><span id="wordcount">0 words</span><span>English (Pakistan)</span><div class="right"><span id="zoomlabel">100%</span><input type="range" min="60" max="150" value="100" id="zoom" aria-label="Zoom"></div></footer>
 <div class="modalback" id="modalback"><div class="modal"><h3 id="modtitle">Find</h3><input id="modinput" placeholder="Search text"><div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px"><button onclick="closeModal()">Cancel</button><button class="primary" id="modok">Find next</button></div></div></div>
 <script>
